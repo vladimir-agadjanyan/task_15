@@ -6,3 +6,8 @@
     }
 
     autoload(class Text);
+    autoload(class FileStorage);
+    autoload(class Storage);
+    autoload(class User);
+    autoload(class Text);
+    autoload(class View);
