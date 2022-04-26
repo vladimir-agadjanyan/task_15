@@ -1,13 +1,18 @@
 <?php 
 
-    function autoload($className)
+    function loadClass($classname)
     {
-        spl_autoload_register('./entities/'. $className. ".php");
+        include "FileStorage.php";
+        include "Storage.php";
+        include "Text.php";
+        include "User.php";
+        include "View.php";
     }
 
-    autoload(class Text);
-    autoload(class FileStorage);
-    autoload(class Storage);
-    autoload(class User);
-    autoload(class Text);
-    autoload(class View);
+    spl_autoload_register("loadClass");
+
+    $test = new FileStorage();
+
+
+
+    
