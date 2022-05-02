@@ -2,11 +2,9 @@
 
     function loadClass($classname)
     {
-        include "FileStorage.php";
-        include "Storage.php";
-        include "Text.php";
-        include "User.php";
-        include "View.php";
+        if(file_exists("./entities/". $classname. ".php")){
+            require_once "./entities/". $classname. ".php";
+        }
     }
 
     spl_autoload_register("loadClass");
