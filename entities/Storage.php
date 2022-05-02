@@ -1,7 +1,7 @@
 <?php 
 
-include_once "D://Skillbox/task 13/project/interfaces/eventIntterface.php";
-include_once "D://Skillbox/task 13/project/interfaces/logInterface.php";
+include_once "./interfaces/EventIntterface.php";
+include_once "./interfaces/LogInterface.php";
 
 abstract class Storage implements LoggerInterface, EventListenerInterface
 {

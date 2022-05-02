@@ -1,6 +1,6 @@
 <?php 
 
-require_once "D://Skillbox/task 13/project/interfaces/eventIntterface.php";
+require_once "./interfaces/EventIntterface.php";
 
 abstract class User implements EventListenerInterface
 {

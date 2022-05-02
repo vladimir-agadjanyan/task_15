@@ -1,6 +1,6 @@
 <?php 
 
-require_once "./storage.php";
+require_once "./Storage.php";
 
 class FileStorage extends Storage 
 {
