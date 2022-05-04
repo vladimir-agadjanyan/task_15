@@ -1,6 +1,5 @@
 <?php 
 
-
 interface LoggerInterface 
 {
     public function logMessage($stringError);

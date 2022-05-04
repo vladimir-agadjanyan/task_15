@@ -1,8 +1,7 @@
 <?php 
 
-include_once "./interfaces/EventIntterface.php";
-include_once "./interfaces/LogInterface.php";
-
+require_once "./interfaces/EventIntterface.php";
+require_once "./interfaces/LogInterface.php";
 abstract class Storage implements LoggerInterface, EventListenerInterface
 {
     public $dataBase = [];                        /* Массив для хранения */
