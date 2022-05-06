@@ -1,6 +1,6 @@
 <?php 
 
-require_once "./interfaces/EventIntterface.php";
+require_once "./interfaces/EventListenerInterface.php";
 
 abstract class User implements EventListenerInterface
 {
